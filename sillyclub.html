@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sign up for cartography club!</h1>
+    <form>
+        <p>enter your email</p>
+        <label for="usermail">Email:</label>
+        <input type="email" id="usermail" name="usermail" required>
+        
+        <br>
+        <label for="interests">Select your interest:</label>
+        <select id="interests" name="interests" multiple>
+            <option value="human_geo">Human Geography</option>
+            <option value="physical_geo">Physical Geography</option>
+            <option value="gis">Geographic Information Systems (GIS)</option>
+            <option value="travel">Travel</option>
+            <option value="language">Language</option>
+            <option value="video_game_maps">Game Maps</option>
+    
+<br></select></br>
+<label for="interestLevel">How interested are you? <span id="interestValue"></span></label>
+<input type="range" id="interestLevel" name="interestLevel" min="0" max="100" value="50">
+<br>
+<label for="reasonForJoining">Why do you want to join the club?</label><br>
+<textarea id="reasonForJoining" name="reasonForJoining" rows="4" cols="50"></textarea>
+    </form>
+
+    <input type="submit" value="Submit">
+</body>
+</html>
