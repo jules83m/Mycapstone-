@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
    
-
     <title>Fortune Teller</title>
 
     <!-- import the webpage's stylesheet -->
@@ -20,9 +19,21 @@
       <label for="namefield">Name:</label>
       <input type="text" id="namefield" name="name" placeholder="your name" required>
       <br>
-      <label for="questionfield">Question:</label>
-      <input type="text" id="questionfield" name="question" placeholder="a yes or no question">
+      <label for="birthdatefield">Birthdate:</label>
+      <input type="date" id="birthdatefield" name="birthdate" required>
       <br>
+      <label for="luckycolorfield">Lucky Color:</label>
+      <input type="color" id="luckycolorfield" name="luckycolor">
+      <br>
+      <label for="emailfield">Email:</label>
+      <input type="email" id="emailfield" name="email" placeholder="your email">
+      <br>
+      <label for="favnumberfield">Favorite Number:</label>
+      <input type="number" id="favnumberfield" name="favnumber" min="1" max="100">
+      <br>
+        <label for="questionfield">Your Question:</label> <br>
+        <textarea id="questionfield" name="question" rows="4" cols="50" placeholder="your question here (yes or no questions only)" required></textarea>
+        <br>
       <input type="submit">
     </form>
     <div id="fortune"></div>
