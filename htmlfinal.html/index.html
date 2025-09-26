@@ -35,98 +35,83 @@
 </head>
 <body>
     <h1>Transportation Survey</h1>
-    <form action="submit.html" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required>
-        <br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your email" required>
-        <br><br>
-        
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" min="1" max="120" required>
-        <br><br>
-<label>Preferred Mode of Transportation:</label><br>
-
-<input type="radio" id="walk" name="transportation" value="walk" required>
-<label for="walk">
-  <a href="images/walk.jpg" target="_blank">
-    <img src="images/walk.jpg" alt="Walk" width="60">
-  </a>
-  Walk
-</label>
-<br>
-
-<input type="radio" id="bike" name="transportation" value="bike" required>
-<label for="bike">
-  <a href="images/bike.jpg" target="_blank">
-    <img src="https://media.sciencephoto.com/f0/13/69/66/f0136966-800px-wm.jpg" alt="Bike" width="60">
-  </a>
-  Bike
-</label>
-<br>
-
-<input type="radio" id="bart" name="transportation" value="bart" required>
-<label for="bart">
-  <a href="images/bart.jpg" target="_blank">
-    <img src="images/bart.jpg" alt="Bart" width="60">
-  </a>
-  Public Transportation
-</label>
-<br>
-
-<input type="radio" id="car" name="transportation" value="car" required>
-<label for="car">
-  <a href="images/car.jpg" target="_blank">
-    <img src="images/car.jpg" alt="Car" width="60">
-  </a>
-  Car
-</label>
-<br>
-
-<input type="radio" id="helicopter" name="transportation" value="helicopter" required>
-<label for="helicopter">
-  <a href="images/other.jpg" target="_blank">
-    <img src="images/other.jpg" alt="Helicopter" width="60">
-  </a>
-  Other
-</label>
-
-<br><br>
-</label>
-<br>
-
-
-</label>
-
-        
-        
-       <label for="satisfaction">Satisfaction with Current Transportation:</label><br>
-<select id="satisfaction" name="satisfaction" required>
-    <option value="" disabled selected>Select your satisfaction</option>
-    <option value="very_satisfied">Very Satisfied</option>
-    <option value="satisfied">Satisfied</option>
-    <option value="neutral">Neutral</option>
-    <option value="unsatisfied">Unsatisfied</option>
-    <option value="very_unsatisfied">Very Unsatisfied</option>
-</select>
-<br>
-<br>
-  <label for="safetycolorfield">What color do you associate with safety?:</label>
-      <input type="color" id="safetycolorfield" name="safetycolor">
-<br>
-<br>
-        
-        <label for="comments">Additional Comments:</label><br>
-        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Your comments here..."></textarea>
-        <br><br>
-        
-        <input type="submit" value="Submit">        
-        <form action="submit.html" method="post">
-
+    <form action="results.html" method="get">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required>
+    <br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your email" required>
+    <br><br>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="1" max="120" required>
+    <br><br>
+    
+    <label>Preferred Mode of Transportation:</label><br>
+    <input type="radio" id="walk" name="transportation" value="walk" required>
+    <label for="walk">
+      <a href="images/walk.jpg" target="_blank">
+        <img src="images/walk.jpg" alt="Walk" width="60">
+      </a>
+      Walk
+    </label>
+    <br>
+    <input type="radio" id="bike" name="transportation" value="bike" required>
+    <label for="bike">
+      <a href="images/bike.jpg" target="_blank">
+        <img src="https://media.sciencephoto.com/f0/13/69/66/f0136966-800px-wm.jpg" alt="Bike" width="60">
+      </a>
+      Bike
+    </label>
+    <br>
+    <input type="radio" id="bart" name="transportation" value="bart" required>
+    <label for="bart">
+      <a href="images/bart.jpg" target="_blank">
+        <img src="images/bart.jpg" alt="Bart" width="60">
+      </a>
+      Public Transportation
+    </label>
+    <br>
+    <input type="radio" id="car" name="transportation" value="car" required>
+    <label for="car">
+      <a href="images/car.jpg" target="_blank">
+        <img src="images/car.jpg" alt="Car" width="60">
+      </a>
+      Car
+    </label>
+    <br>
+    <input type="radio" id="helicopter" name="transportation" value="helicopter" required>
+    <label for="helicopter">
+      <a href="images/other.jpg" target="_blank">
+        <img src="images/other.jpg" alt="Helicopter" width="60">
+      </a>
+      Other
+    </label>
+    <br><br>
+    
+    <label for="satisfaction">Satisfaction with Current Transportation:</label><br>
+    <select id="satisfaction" name="satisfaction" required>
+        <option value="" disabled selected>Select your satisfaction</option>
+        <option value="very_satisfied">Very Satisfied</option>
+        <option value="satisfied">Satisfied</option>
+        <option value="neutral">Neutral</option>
+        <option value="unsatisfied">Unsatisfied</option>
+        <option value="very_unsatisfied">Very Unsatisfied</option>
+    </select>
+    <br><br>
+    
+    <label for="safetycolorfield">What color do you associate with safety?:</label>
+    <input type="color" id="safetycolorfield" name="safetycolor">
+    <br><br>
+    
+    <label for="comments">Additional Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Your comments here..."></textarea>
+    <br><br>
+    
+    <input type="submit" value="Submit">
 </form>
 <br>
-<a href="results.html">My View</a>    
+<a href="results.html">My View</a>
 </body>
 </html>
